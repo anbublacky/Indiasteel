@@ -1,9 +1,9 @@
 IndiaSteel::Application.routes.draw do
+  resources :companyprofiles
+
   resources :follow_ups
 
   resources :customer_details
-
-  resources :company_profiles
 
   devise_for :users
 

@@ -1,0 +1,53 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Company_name: MyString
+  Owner_name: MyString
+  Address: MyText
+  Company_status: MyString
+  Date_of_Establishment: 2012-01-26
+  Factory_space_status: MyString
+  Telephone_No: 1
+  Fax_No: 1
+  E_Mail: MyString
+  Contact_Person: MyString
+  Cell_no: 1
+  Nature_of_Business: MyString
+  Local_sales_tax: MyString
+  Central_sales_tax: MyString
+  TIN_No: MyString
+  Central_excise: MyString
+  Income_tax_PA_No: MyString
+  No_of_Employee: 1
+  Branches_Address: MyText
+  Turnover_past3year: MyString
+  BankersandAddress: MyText
+  Bank_Account_No: MyString
+  Our_Manufacturer: MyString
+  Our_Major_Customer: MyString
+
+two:
+  Company_name: MyString
+  Owner_name: MyString
+  Address: MyText
+  Company_status: MyString
+  Date_of_Establishment: 2012-01-26
+  Factory_space_status: MyString
+  Telephone_No: 1
+  Fax_No: 1
+  E_Mail: MyString
+  Contact_Person: MyString
+  Cell_no: 1
+  Nature_of_Business: MyString
+  Local_sales_tax: MyString
+  Central_sales_tax: MyString
+  TIN_No: MyString
+  Central_excise: MyString
+  Income_tax_PA_No: MyString
+  No_of_Employee: 1
+  Branches_Address: MyText
+  Turnover_past3year: MyString
+  BankersandAddress: MyText
+  Bank_Account_No: MyString
+  Our_Manufacturer: MyString
+  Our_Major_Customer: MyString
