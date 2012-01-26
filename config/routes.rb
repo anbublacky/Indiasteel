@@ -1,4 +1,10 @@
 IndiaSteel::Application.routes.draw do
+  resources :follow_ups
+
+  resources :customer_details
+
+  resources :company_profiles
+
   devise_for :users
 
   get "home/index"

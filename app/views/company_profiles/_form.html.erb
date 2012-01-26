@@ -1,0 +1,113 @@
+<%= form_for(@company_profile) do |f| %>
+  <% if @company_profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@company_profile.errors.count, "error") %> prohibited this company_profile from being saved:</h2>
+
+      <ul>
+      <% @company_profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Company_name %><br />
+    <%= f.text_field :Company_name %>
+  </div>
+  <div class="field">
+    <%= f.label :Owner_name %><br />
+    <%= f.text_field :Owner_name %>
+  </div>
+  <div class="field">
+    <%= f.label :Address %><br />
+    <%= f.text_area :Address %>
+  </div>
+  <div class="field">
+    <%= f.label :Company_status %><br />
+    <%= f.text_field :Company_status %>
+  </div>
+  <div class="field">
+    <%= f.label :Date_of_Establishment %><br />
+    <%= f.date_select :Date_of_Establishment %>
+  </div>
+  <div class="field">
+    <%= f.label :Factory_space_status %><br />
+    <%= f.text_field :Factory_space_status %>
+  </div>
+  <div class="field">
+    <%= f.label :Telephone_No %><br />
+    <%= f.text_field :Telephone_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Fax_No %><br />
+    <%= f.text_field :Fax_No %>
+  </div>
+  <div class="field">
+    <%= f.label :E-Mail %><br />
+    <%= f.text_field :E-Mail %>
+  </div>
+  <div class="field">
+    <%= f.label :Contact_Person %><br />
+    <%= f.text_field :Contact_Person %>
+  </div>
+  <div class="field">
+    <%= f.label :Cell_no %><br />
+    <%= f.text_field :Cell_no %>
+  </div>
+  <div class="field">
+    <%= f.label :Nature_of_Business %><br />
+    <%= f.text_field :Nature_of_Business %>
+  </div>
+  <div class="field">
+    <%= f.label :Local_sales_tax %><br />
+    <%= f.text_field :Local_sales_tax %>
+  </div>
+  <div class="field">
+    <%= f.label :Central_sales_tax %><br />
+    <%= f.text_field :Central_sales_tax %>
+  </div>
+  <div class="field">
+    <%= f.label :TIN_No %><br />
+    <%= f.text_field :TIN_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Central_excise %><br />
+    <%= f.text_field :Central_excise %>
+  </div>
+  <div class="field">
+    <%= f.label :Income_tax_PA_No %><br />
+    <%= f.text_field :Income_tax_PA_No %>
+  </div>
+  <div class="field">
+    <%= f.label :No_of_Employees %><br />
+    <%= f.text_field :No_of_Employees %>
+  </div>
+  <div class="field">
+    <%= f.label :Branches_Address %><br />
+    <%= f.text_area :Branches_Address %>
+  </div>
+  <div class="field">
+    <%= f.label :Turnover_past3year %><br />
+    <%= f.text_field :Turnover_past3year %>
+  </div>
+  <div class="field">
+    <%= f.label :BankersandAddress %><br />
+    <%= f.text_area :BankersandAddress %>
+  </div>
+  <div class="field">
+    <%= f.label :Bank_Account_No %><br />
+    <%= f.text_field :Bank_Account_No %>
+  </div>
+  <div class="field">
+    <%= f.label :Our_Manufacturers %><br />
+    <%= f.text_field :Our_Manufacturers %>
+  </div>
+  <div class="field">
+    <%= f.label :Our_Major_Customers %><br />
+    <%= f.text_field :Our_Major_Customers %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

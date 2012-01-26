@@ -1,0 +1,69 @@
+<h1>Listing company_profiles</h1>
+
+<table>
+  <tr>
+    <th>Company name</th>
+    <th>Owner name</th>
+    <th>Address</th>
+    <th>Company status</th>
+    <th>Date of establishment</th>
+    <th>Factory space status</th>
+    <th>Telephone no</th>
+    <th>Fax no</th>
+    <th>E-mail</th>
+    <th>Contact person</th>
+    <th>Cell no</th>
+    <th>Nature of business</th>
+    <th>Local sales tax</th>
+    <th>Central sales tax</th>
+    <th>Tin no</th>
+    <th>Central excise</th>
+    <th>Income tax pa no</th>
+    <th>No of employees</th>
+    <th>Branches address</th>
+    <th>Turnover past3year</th>
+    <th>Bankersandaddress</th>
+    <th>Bank account no</th>
+    <th>Our manufacturers</th>
+    <th>Our major customers</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @company_profiles.each do |company_profile| %>
+  <tr>
+    <td><%= company_profile.Company_name %></td>
+    <td><%= company_profile.Owner_name %></td>
+    <td><%= company_profile.Address %></td>
+    <td><%= company_profile.Company_status %></td>
+    <td><%= company_profile.Date_of_Establishment %></td>
+    <td><%= company_profile.Factory_space_status %></td>
+    <td><%= company_profile.Telephone_No %></td>
+    <td><%= company_profile.Fax_No %></td>
+    <td><%= company_profile.E-Mail %></td>
+    <td><%= company_profile.Contact_Person %></td>
+    <td><%= company_profile.Cell_no %></td>
+    <td><%= company_profile.Nature_of_Business %></td>
+    <td><%= company_profile.Local_sales_tax %></td>
+    <td><%= company_profile.Central_sales_tax %></td>
+    <td><%= company_profile.TIN_No %></td>
+    <td><%= company_profile.Central_excise %></td>
+    <td><%= company_profile.Income_tax_PA_No %></td>
+    <td><%= company_profile.No_of_Employees %></td>
+    <td><%= company_profile.Branches_Address %></td>
+    <td><%= company_profile.Turnover_past3year %></td>
+    <td><%= company_profile.BankersandAddress %></td>
+    <td><%= company_profile.Bank_Account_No %></td>
+    <td><%= company_profile.Our_Manufacturers %></td>
+    <td><%= company_profile.Our_Major_Customers %></td>
+    <td><%= link_to 'Show', company_profile %></td>
+    <td><%= link_to 'Edit', edit_company_profile_path(company_profile) %></td>
+    <td><%= link_to 'Destroy', company_profile, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Company profile', new_company_profile_path %>

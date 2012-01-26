@@ -1,0 +1,29 @@
+<h1>Listing customer_details</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Mobile</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @customer_details.each do |customer_detail| %>
+  <tr>
+    <td><%= customer_detail.Name %></td>
+    <td><%= customer_detail.Phone %></td>
+    <td><%= customer_detail.Mobile %></td>
+    <td><%= customer_detail.status %></td>
+    <td><%= link_to 'Show', customer_detail %></td>
+    <td><%= link_to 'Edit', edit_customer_detail_path(customer_detail) %></td>
+    <td><%= link_to 'Destroy', customer_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Customer detail', new_customer_detail_path %>
